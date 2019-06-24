@@ -3,13 +3,19 @@
     package="by.stress.pvt.android.lessons">
 
     <application
+        android:name=".cw5.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cw5.Cw5Activity"></activity>
+        <receiver
+            android:name=".cw5.Cw5MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name=".cw5.Cw5Activity" />
         <activity android:name=".cw4.Cw4Activity" />
         <activity android:name=".cw2.Cw2Activity" />
         <activity android:name=".MainActivity">
