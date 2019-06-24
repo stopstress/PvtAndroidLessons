@@ -13,4 +13,7 @@ class Cw4Activity : AppCompatActivity() {
 
         // val cw4txt = findViewById<cw4MyView>()
     }
+
+
+
 }
