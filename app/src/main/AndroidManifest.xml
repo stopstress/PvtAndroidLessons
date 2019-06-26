@@ -10,10 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".cw6.Cw6Activity"></activity>
+
         <receiver
             android:name=".cw5.Cw5MyReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
         <activity android:name=".cw5.Cw5Activity" />
         <activity android:name=".cw4.Cw4Activity" />
