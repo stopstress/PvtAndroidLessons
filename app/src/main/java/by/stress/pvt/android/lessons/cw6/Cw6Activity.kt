@@ -4,13 +4,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.widget.Toast
 //import android.support.v7.widget.RecyclerView
 import by.stress.pvt.android.lessons.R
 //import kotlinx.android.synthetic.main.activity_cw6.*
 
 //import kotlinx.android.synthetic.main.activity_cw6.*
 
-class Cw6Activity : AppCompatActivity() {
+class Cw6Activity : AppCompatActivity(), cw6ListAdapter.ClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,11 +52,19 @@ class Cw6Activity : AppCompatActivity() {
         )
 
 
-        cw6_recycler.adapter = cw6ListAdapter(items)
+        cw6_recycler.adapter = cw6ListAdapter(items, this )
 
+
+
+        // cw6_recycler.addItemDecoration() // отступы-линии...
             // внутрь NestedScrollView
-//
-//
+
+
+    }
+
+    override fun onNewsItemClick(item: News) {
+
+        Toast.makeText(this, item.title, Toast.LENGTH_SHORT).show()
 
     }
 }
