@@ -25,6 +25,8 @@ class cw6ListAdapter(
 
         }
 
+        // notifyDataSetChanged() // перезагрузить список
+
 
         //return cw6ListViewHolder(view)
 

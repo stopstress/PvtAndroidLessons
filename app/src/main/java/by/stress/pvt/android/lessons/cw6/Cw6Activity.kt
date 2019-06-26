@@ -56,6 +56,7 @@ class Cw6Activity : AppCompatActivity(), cw6ListAdapter.ClickListener {
 
 
 
+
         // cw6_recycler.addItemDecoration() // отступы-линии...
             // внутрь NestedScrollView
 
