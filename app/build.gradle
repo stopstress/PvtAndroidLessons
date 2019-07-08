@@ -18,9 +18,9 @@ android {
     signingConfigs{ // название мб любым
         debug{
             storeFile file("../../AndroidStudioProjects/Pass/password.jks")
-            storePassword
-            keyAlias
-            keyPassword
+            storePassword "password"
+            keyAlias "password"
+            keyPassword "password"
         }
         release{
             // to do for real project
