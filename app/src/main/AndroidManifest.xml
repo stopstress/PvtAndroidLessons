@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cw10.Cw10Activity"></activity>
+        <activity android:name=".cw11_2.MainActivityVMTemp"></activity>
+        <activity android:name=".cw11_2.Cw11Activity2" />
+        <activity android:name=".cw11.Cw11Activity" />
+        <activity android:name=".cw10.Cw10Activity" />
         <activity android:name=".cw9.Cw9Activity" />
         <activity android:name=".cw8.Cw8Activity2" />
         <activity android:name=".cw8.Cw8Activity" />
