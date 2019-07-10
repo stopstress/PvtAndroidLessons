@@ -5,7 +5,12 @@ import android.os.Handler
 
 class Cw11ViewModel {
 
-    var state: MutableLiveData<Cw11State> = MutableLiveData<Cw11State>()
+    //var state: MutableLiveData<Cw11State> = MutableLiveData<Cw11State>()
+
+    val state: MutableLiveData<Cw11State> by lazy(LazyThreadSafetyMode.NONE) {
+        MutableLiveData<Cw11State>()
+            // LazyThreadSafetyMode.NONE - быстрее грузит
+    }
 
     fun load() {
 
