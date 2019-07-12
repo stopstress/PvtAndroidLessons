@@ -10,3 +10,6 @@ data class Student(
     val imageUrl: String,
     val age: Int
 )
+
+// https://develop.backendless.com/Cw/data/tables/student
+// chrome-extension://coohjcphdfgbiolnekdpbcijmhambjff/index.html
