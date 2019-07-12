@@ -1,6 +1,7 @@
 package by.stress.pvt.android.lessons.cw9.entity
 
 import by.stress.pvt.android.lessons.BuildConfig
+import by.stress.pvt.android.lessons.cw12.StudentApi
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
@@ -12,6 +13,8 @@ import java.util.concurrent.TimeUnit
 object NetProvider {
 
     private var api: Api? = null
+
+    private var studentApi: StudentApi? = null
 
 
     //
@@ -61,4 +64,15 @@ object NetProvider {
         }
         return api!!
     }
+
+
+    //
+    fun provideStudentApi(retrofit: Retrofit): StudentApi {
+
+        if (studentApi == null) {
+            studentApi = retrofit.create<StudentApi>(StudentApi::class.java)
+        }
+        return studentApi!!
+    }
+
 }
